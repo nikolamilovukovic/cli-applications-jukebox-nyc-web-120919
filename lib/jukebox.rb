@@ -70,19 +70,21 @@ def exit_jukebox
   
 def run(songs)
   help
-  loop do
+  input = ""
+  while input != "exit"
     puts "Please enter a command:"
     input = gets.chomp
     case input
-    when 'play'
-      play(songs)
-    when 'help'
+    when "play"
+      play(my_songs)
+    when "list"
+      list(my_songs)
+    when "help"
       help
-    when 'list'
-      list(songs)
-    when 'exit'
-      exit_jukebox
-      exit 
+    when "exit"
+      exit_jukebox    
+    else
+      puts "Invalid input, please try again"
     end
   end
 end
