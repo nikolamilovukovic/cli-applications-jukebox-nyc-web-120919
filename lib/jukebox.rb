@@ -82,6 +82,7 @@ def run(songs)
       list(songs)
     when 'exit'
       exit_jukebox
+      exit 
     end
   end
 end
