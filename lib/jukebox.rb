@@ -40,10 +40,10 @@ def help
 end 
 
 def list(songs)
-  songs.each_with_index {|song, index|}
-  puts "#{index}, #{song}"
-  
-end 
+  songs.each_with_index {|song, index|
+  puts "#{index}, #{song}"}
+  end 
+  list(songs)
 def play
   
 end 
