@@ -40,7 +40,9 @@ def help
 end 
 
 def list(songs)
-  songs.each_with_index {|song|}
+  new_array = {}
+  songs.each_with_index {|song, index|}
+  new_array[song] = index
 end 
 def play
   
