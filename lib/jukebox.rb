@@ -48,6 +48,7 @@ def list(songs)
 def play(songs)
   puts "Please enter a song name or number:"
   user_response = gets.strip
+  get_user_input = gets.chomp
   if user_response == songs 
     puts "Playing #{songs}"
     else
